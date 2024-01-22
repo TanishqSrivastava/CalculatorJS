@@ -1,1 +1,78 @@
 
+<html>
+    <head>
+        <style>
+            .calculator{
+                display:flex;
+                padding:20px;
+                gap:5px;
+                background-color:darkgray;
+                flex-direction:column;
+                align-items:center;
+                justify-content:center;
+                border-right:5px solid black;
+                border-bottom:5px solid black;
+            }
+            .main{
+                height:100%;
+                width:100%;
+                display:flex;
+                align-items:center;
+                justify-content:center;
+            }
+            #screen{
+                height:60px;
+                width:100%;
+                background-color:white;
+                font-size:45px;
+                text-align:right;
+                padding:10px;
+            }
+            button{
+                font-size:50px;
+                padding:25px;
+            }
+            
+        </style>
+        <title>Calculator</title>
+    </head>
+    <body>
+        <div class="main">
+        <div class="calculator">
+            <div id ="screen">
+                
+            </div>
+            <span class="row">
+                <button id="clear">CLEAR</button>
+                <button id="delete">DELETE</button>
+
+            </span>
+            <span class = "row">
+                <button id="seven">7</button>
+                <button id="eight">8</button>
+                <button id="nine">9</button>
+                <button id="divide">/</button>
+            </span>
+            <span class = "row" >
+                <button id="four">4</button>
+                <button id="five">5</button>
+                <button id="six">6</button>
+                <button id="multiply">x</button>
+            </span>
+            <span class="row">
+                <button id="one">4</button>
+                <button id="two">5</button>
+                <button id="three">6</button>
+                <button id="minus">-</button>
+            </span>
+            <span class="row">
+                <button id="dot">.</button>
+                <button id="zero">0</button>
+                <button id="equal">=</button>
+                <button id="plus">+</button>
+            </span>
+        </div>
+    </div>
+    <script src="calc.js"></script>
+    </body>
+</html>
