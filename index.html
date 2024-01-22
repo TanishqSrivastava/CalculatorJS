@@ -8,8 +8,8 @@
                 gap:5px;
                 background-color:darkgray;
                 flex-direction:column;
-                align-items:center;
-                justify-content:center;
+                
+                
                 border-right:5px solid black;
                 border-bottom:5px solid black;
             }
@@ -22,29 +22,49 @@
             }
             #screen{
                 height:60px;
-                width:100%;
-                background-color:white;
+                
+                background-color:gray;
                 font-size:45px;
                 text-align:right;
                 padding:10px;
+                border:1px solid black;
+            }
+            button:hover{
+                background-color:darkgray;
             }
             button{
                 font-size:50px;
                 padding:25px;
             }
+            .row:not(:first-child){
+                display:flex;
+                
+            }
             
+            button{
+                border:1px solid black;
+            }
+            .row:not(:first-child) button{
+                width:25%;
+                
+            }
+            .row{
+                gap:10px;
+                margin-top:2px;
+                margin-bottom:2px;
+            }
         </style>
         <title>Calculator</title>
     </head>
     <body>
         <div class="main">
         <div class="calculator">
-            <div id ="screen">
+            <div id ="screen" >
                 
             </div>
             <span class="row">
-                <button id="clear">CLEAR</button>
-                <button id="delete">DELETE</button>
+                <button id="clear" style="width:auto;height:auto;" >CLEAR</button>
+                <button id="delete" style="width:auto;height:auto;">DELETE</button>
 
             </span>
             <span class = "row">

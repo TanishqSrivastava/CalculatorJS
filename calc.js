@@ -16,55 +16,135 @@ const clear = document.getElementById('clear');
 const equals = document.getElementById('equal');
 const display = document.getElementById('screen');
 const del = document.getElementById('delete');
-
+var disp = false;
 //add event listeners for all buttons
 one.addEventListener('click', function() {
-    display.textContent += 1;
+    if (disp == true){
+        display.textContent = 1;
+        disp = false;
+    }else{
+        display.textContent += 1;
+    }
 });
 two.addEventListener('click', function() {
-    display.textContent += 2;
+    if (disp == true){
+        display.textContent = 2;
+        disp = false;
+    }else{
+        display.textContent += 2;
+    }
 });
 three.addEventListener('click', function() {
-    display.textContent += 3;
+    if (disp== true){
+        display.textContent = 3;
+        disp = false;  
+    }else{
+        display.textContent += 3;
+    
+    }
 });
 four.addEventListener('click', function() {
-    display.textContent += 4;
+    if (disp == true){
+        display.textContent = 4;
+        disp = false;
+    }else{
+        display.textContent += 4;
+    }
 });
 five.addEventListener('click', function() {
-    display.textContent += 5;
+    if(disp == true){
+        display.textContent = 5;
+        disp = false;
+    }else{
+        display.textContent += 5;
+    }
 });
 six.addEventListener('click', function() {
-    display.textContent += 6;
+    if (disp == true){
+        display.textContent = 6;
+        disp = false;
+    }else{
+        display.textContent += 6;
+    }
 });
 seven.addEventListener('click', function() {
-    display.textContent += 7;
+    if(disp == true){
+        display.textContent = 7;
+        disp = false;
+    }else{
+        display.textContent += 7;
+    }
 });
 eight.addEventListener('click', function() {
-    display.textContent += 8;
+    if(disp == true){
+        display.textContent = 8;
+        disp = false;
+    }else{
+        display.textContent += 8;
+    }
 });
 nine.addEventListener('click', function() {
-    display.textContent += 9;
+    if (disp == true){
+        display.textContent = 9;
+        disp = false;
+    }else{
+        display.textContent += 9;
+    
+    }
 });
 zero.addEventListener('click', function() {
-    display.textContent += 0;
+    if (disp == true){
+        display.textContent = 0;
+        disp = false;
+    }
+    else{
+        display.textContent += 0;
+    }
 });
 add.addEventListener('click', function() {
-    display.textContent += '+';
+    if(disp == true){
+        display.textContent = '+';
+        disp = false;
+    }else{
+        display.textContent += '+';
+    }
 });
 subtract.addEventListener('click', function() {
-    display.textContent += '-';
+    if (disp == true){
+        display.textContent = '-';
+        disp = false;
+    }else{
+        display.textContent += '-';
+    }
 });
 multiply.addEventListener('click', function() {
-    display.textContent += '*';
+    if (disp == true){
+        display.textContent = '*';
+        disp = false;
+    }else{
+        display.textContent += '*';
+    }
 });
 divide.addEventListener('click', function() {
-    display.textContent += '/';
+    if(disp == true){
+        display.textContent = '/';
+        disp = false;
+    }else{
+        display.textContent += '/';
+        
+    }
 });
 clear.addEventListener('click', function() {
     display.textContent = '';
 });
 equals.addEventListener('click', function() {
-    display.textContent = eval(display.textContent);
+    try{
+        display.textContent = eval(display.textContent);}
+    catch(error){
+            display.textContent = 'Error';
+            disp = true;
+        }
+        disp = true;
 });
 del.addEventListener('click',function(){
     display.textContent = display.textContent.slice(0, -1);
